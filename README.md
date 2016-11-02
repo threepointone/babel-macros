@@ -35,3 +35,6 @@ import { x } from './x.js'
 x(...)
 ```
 
+usage 
+---
+add `'babel-macros'` to your babel config's `plugins` field. 
