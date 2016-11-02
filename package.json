@@ -1,0 +1,7 @@
+{
+  "name": "babel-macros",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "author": "Sunil Pai <threepointone@gmail.com>",
+  "license": "MIT"
+}
