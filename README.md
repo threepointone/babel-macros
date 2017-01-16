@@ -1,6 +1,8 @@
 babel-macros
 ---
 
+(this is a readme for a project that I want to exist. previous work - [sweetjs](http://sweetjs.org/), [babel-plugin-macros](https://github.com/codemix/babel-plugin-macros))
+
 a macro is a function that takes source code as input, and modifies it. 
 
 input - 
