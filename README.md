@@ -9,7 +9,7 @@ input -
 ```jsx
 import defmacro from 'babel-macros'
 
-let hello = defmacro(x => 
+let log = defmacro(x => 
   x.replaceWithSourceString(`console.log('hello' + ${x.toSource()})`))
 
 log('sunil')
