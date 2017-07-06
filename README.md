@@ -14,7 +14,7 @@ export default function hello(x){
 }
 
 // app.js
-import hello from 'css.macros'
+import hello from './hello.macros'
 
 hello('sunil')
 ```
