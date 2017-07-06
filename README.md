@@ -5,21 +5,24 @@ babel-macros
 
 a macro is a function that takes source code as input, and modifies it. 
 
-input - 
+input
 ```jsx
-import defmacro from 'babel-macros'
-
-let hello = defmacro(x => 
+// hello.macros.js 
+export default function hello(x){
+  // do whatever with the node  
   x.replaceWithSourceString(`console.log('hello' + ${x.toSource()})`))
+}
 
-log('sunil')
+// app.js
+import hello from 'css.macros'
+
+hello('sunil')
 ```
 
 output
 ```jsx
 console.log('hello' + 'sunil')
 ```
-
 Works across common function call types 
 ```jsx
 x(...)
@@ -27,15 +30,6 @@ x(...)
 x`...`
 ```
 
-should be able to export / import across modules 
-```jsx
-// x.js 
-export const x = defmacro(...)
-
-// app.js 
-import { x } from './x.js'
-x(...)
-```
 
 usage 
 ---
